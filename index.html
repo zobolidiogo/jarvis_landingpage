@@ -1,72 +1,3020 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR" prefix="og: https://ogp.me/ns#">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#07111f">
-<meta name="description" content="A.R.A. é uma assistente pessoal inteligente em desenvolvimento para conversar, organizar, lembrar, planejar e automatizar.">
-<link rel="icon" href="./assets/favicon.png">
-<title>A.R.A. — O próximo passo é o futuro</title>
-<link rel="stylesheet" href="./styles.css">
+
+    <!-- =========================================================
+         BASE
+    ========================================================== -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>A.R.A. — Inteligência Artificial Brasileira, Gratuita e Pessoal</title>
+
+
+    <!-- =========================================================
+         SEO PRINCIPAL
+    ========================================================== -->
+
+    <meta name="description" content="Conheça a A.R.A., uma inteligência artificial brasileira gratuita, rápida e personalizada. Uma assistente pessoal criada para entender contexto, organizar sua rotina e conectar seus aplicativos.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow">
+    <meta name="author" content="A.R.A.">
+    <meta name="publisher" content="A.R.A.">
+    <meta name="application-name" content="A.R.A.">
+    <meta name="theme-color" content="#041019">
+    <meta name="color-scheme" content="dark">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+
+    <link rel="canonical" href="https://ara.app.br/">
+    <link rel="alternate" hreflang="pt-BR" href="https://ara.app.br/">
+    <link rel="alternate" hreflang="x-default" href="https://ara.app.br/">
+
+
+    <!-- =========================================================
+         BRAND & FAVICON (Mídias apontando para a raiz oficial)
+    ========================================================== -->
+
+    <link rel="icon" type="image/png" sizes="192x192" href="https://ara.app.br/assets/favicon.png">
+    <link rel="apple-touch-icon" href="https://ara.app.br/assets/favicon.png">
+
+    <meta name="apple-mobile-web-app-title" content="A.R.A.">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
+    <!-- =========================================================
+         OPEN GRAPH (FaceBook, WhatsApp, LinkedIn)
+    ========================================================== -->
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://ara.app.br/">
+    <meta property="og:site_name" content="A.R.A.">
+    <meta property="og:title" content="A.R.A. — Uma IA que entende você">
+    <meta property="og:description" content="Inteligência artificial brasileira, gratuita, personalizada e criada para combinar conversa, contexto, memória, produtividade e automação.">
+    <meta property="og:image" content="https://ara.app.br/assets/og-image.png">
+    <meta property="og:image:alt" content="A.R.A. — inteligência artificial brasileira">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+
+    <!-- =========================================================
+         TWITTER / X
+    ========================================================== -->
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="A.R.A. — Inteligência Artificial Brasileira">
+    <meta name="twitter:description" content="Uma IA gratuita, personalizada, intuitiva e criada para se adaptar ao usuário.">
+    <meta name="twitter:image" content="https://ara.app.br/assets/og-image.png">
+
+
+    <!-- =========================================================
+         PERFORMANCE
+    ========================================================== -->
+
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- =========================================================
+         SCHEMAS (Organization, Website, SoftwareApplication, FAQ)
+    ========================================================== -->
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "A.R.A.",
+            "description": "Projeto brasileiro de inteligência artificial focado em assistência pessoal, personalização, produtividade e automação.",
+            "areaServed": {
+                "@type": "Country",
+                "name": "Brasil"
+            },
+            "knowsAbout": [
+                "Inteligência Artificial",
+                "Assistentes Pessoais",
+                "Automação",
+                "Produtividade",
+                "Personalização",
+                "Memória Contextual",
+                "Integrações de Aplicativos"
+            ]
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "A.R.A.",
+            "alternateName": "A.R.A. Inteligência Artificial",
+            "url": "https://ara.app.br/",
+            "description": "Site oficial de apresentação da A.R.A., uma inteligência artificial brasileira gratuita, personalizada e voltada para automação e produtividade.",
+            "inLanguage": "pt-BR"
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "A.R.A.",
+            "applicationCategory": "ProductivityApplication",
+            "applicationSubCategory": "Artificial Intelligence Assistant",
+            "operatingSystem": "Web",
+            "inLanguage": "pt-BR",
+            "isAccessibleForFree": true,
+            "description": "A.R.A. é uma assistente pessoal de inteligência artificial brasileira desenvolvida para oferecer conversação, contexto, memória, produtividade, personalização e automação.",
+            "countryOfOrigin": {
+                "@type": "Country",
+                "name": "Brasil"
+            },
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "BRL"
+            },
+            "featureList": [
+                "Assistente pessoal com inteligência artificial",
+                "Uso gratuito",
+                "Memória contextual",
+                "Personalização de respostas",
+                "Organização de tarefas",
+                "Lembretes",
+                "Automação de ações",
+                "Integrações com aplicativos",
+                "Conversação em linguagem natural"
+            ]
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+                    "@type": "Question",
+                    "name": "O que significa A.R.A.?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A.R.A. significa Assistente de Raciocínio Adaptativo. O nome representa uma assistente de inteligência artificial criada para compreender contexto, adaptar sua experiência ao usuário e auxiliar em diferentes situações da rotina."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "O que é a A.R.A.?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A A.R.A. é uma assistente pessoal de inteligência artificial brasileira criada para unir conversação, contexto, memória, produtividade, personalização e automação."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "A A.R.A. será gratuita?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Sim. A proposta do projeto é disponibilizar a experiência principal da A.R.A. gratuitamente para os usuários."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "A A.R.A. foi criada no Brasil?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Sim. A A.R.A. é um projeto de inteligência artificial criado e desenvolvido por brasileiros."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "A A.R.A. terá integração com aplicativos?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A arquitetura da A.R.A. está sendo preparada para integrar serviços de agenda, email, música, mapas, produtividade e outras plataformas digitais."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "A A.R.A. já está disponível?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A A.R.A. está em desenvolvimento ativo. Esta página apresenta a visão, os diferenciais e o roadmap do projeto."
+                    }
+                }
+            ]
+        }
+    </script>
+
 </head>
+
 <body>
-<header>
-  <a class="brand" href="#inicio"><img src="./assets/logo-secundary.png" alt=""><b>A.R.A.</b></a>
-  <nav><a href="#visao">Visão</a><a href="#recursos">Recursos</a><a href="#roadmap">Roadmap</a><a href="#faq">FAQ</a></nav>
-  <button id="share">Compartilhar</button>
-</header>
-<main>
-<section class="hero" id="inicio">
-  <div>
-    <span class="tag">PRODUTO EM DESENVOLVIMENTO</span>
-    <h1>Uma nova forma de ter <em>inteligência ao seu lado.</em></h1>
-    <p>A.R.A. é uma assistente pessoal inteligente criada para reunir conversa, organização, memória, arquivos, projetos e automações em um único ambiente.</p>
-    <div class="actions"><a href="#visao">Conhecer a A.R.A.</a><button class="ghost share2">Compartilhar projeto</button></div>
-  </div>
-  <div class="visual"><img src="./assets/logo-principal.png" alt="A.R.A."></div>
-</section>
-<section class="statement"><p>A.R.A. não foi pensada para ser apenas uma caixa de conversa. Foi pensada como <strong>uma camada inteligente entre você e o que precisa acontecer.</strong></p></section>
-<section id="visao">
-  <span class="index">01 / VISÃO</span><h2>Conversa é só o começo.</h2>
-  <div class="cards">
-    <article><b>CONTEXTO</b><h3>Uma assistente que entende o ambiente.</h3><p>Conversas, tarefas, lembretes, arquivos e projetos podem fazer parte do mesmo fluxo.</p></article>
-    <article><b>AÇÃO</b><h3>Respostas que podem virar execução.</h3><p>A proposta é ir além de responder: criar, organizar, atualizar e acompanhar ações autorizadas.</p></article>
-    <article><b>CONTROLE</b><h3>Memória transparente.</h3><p>Preferências, objetivos e contexto persistente com revisão e controle pelo usuário.</p></article>
-  </div>
-</section>
-<section id="recursos">
-  <span class="index">02 / ECOSSISTEMA</span><h2>Um produto. Vários modos de trabalhar.</h2>
-  <div class="features">
-    <article><span>01</span><h3>Conversa inteligente</h3><p>Espaço central para perguntar, planejar e criar.</p><small>BASE EXISTENTE</small></article>
-    <article><span>02</span><h3>Tarefas e lembretes</h3><p>Linguagem natural convertida em ações e prazos.</p><small>BASE EXISTENTE</small></article>
-    <article><span>03</span><h3>Memória</h3><p>Contexto persistente, consolidado e controlável.</p><small>EM EVOLUÇÃO</small></article>
-    <article><span>04</span><h3>Arquivos</h3><p>Conhecimento pessoal e documentos conectados.</p><small>ROADMAP</small></article>
-    <article><span>05</span><h3>Projetos</h3><p>Conversas, tarefas, arquivos e contexto agrupados.</p><small>ROADMAP</small></article>
-    <article><span>06</span><h3>Automações</h3><p>Fluxos recorrentes e notificações inteligentes.</p><small>ROADMAP</small></article>
-    <article><span>07</span><h3>Integrações</h3><p>Serviços externos conectados à experiência.</p><small>ROADMAP</small></article>
-    <article><span>08</span><h3>Voz e mobile</h3><p>A.R.A. além da interface web.</p><small>FUTURO</small></article>
-  </div>
-</section>
-<section id="roadmap">
-  <span class="index">03 / ROADMAP</span><h2>Construída por camadas.</h2>
-  <div class="timeline">
-    <article><b>AGORA</b><h3>Fundação web</h3><p>Autenticação, conversas, tarefas, lembretes, backend, banco e infraestrutura.</p></article>
-    <article><b>EM DESENVOLVIMENTO</b><h3>Experiência A.R.A. + memória</h3><p>Novo produto visual, memória inteligente e interface contextual.</p></article>
-    <article><b>PRÓXIMAS ETAPAS</b><h3>Arquivos, projetos e automações</h3><p>Conhecimento conectado, contextos de projeto, notificações e integrações.</p></article>
-    <article><b>EVOLUÇÃO</b><h3>Voz, mobile e escala</h3><p>Expansão para dispositivos móveis e infraestrutura de IA.</p></article>
-  </div>
-</section>
-<section class="manifesto"><span class="index">04 / PRINCÍPIO</span><blockquote>“Tecnologia útil não deveria exigir que você pense como a ferramenta. A ferramenta deveria entender melhor como você trabalha.”</blockquote></section>
-<section id="faq">
-  <span class="index">05 / FAQ</span><h2>Perguntas rápidas.</h2>
-  <details><summary>A A.R.A. já está disponível?</summary><p>O produto está em desenvolvimento. Esta página apresenta a visão e acompanha a evolução pública do projeto.</p></details>
-  <details><summary>Será apenas um chatbot?</summary><p>Não. A proposta reúne conversa, tarefas, lembretes, memória, arquivos, projetos, automações e integrações.</p></details>
-  <details><summary>Haverá versão mobile?</summary><p>Sim. Mobile faz parte da direção planejada após a consolidação da experiência web.</p></details>
-</section>
-<section class="cta"><img src="./assets/logo-principal.png" alt=""><div><span class="index">O PRÓXIMO PASSO É O FUTURO</span><h2>Acompanhe a construção da A.R.A.</h2><p>Uma experiência de assistente pessoal que combina contexto, organização e ação.</p><button class="share2">Compartilhar A.R.A.</button></div></section>
-</main>
-<footer><div class="brand"><img src="./assets/logo-secundary.png" alt=""><b>A.R.A.</b></div><p>© <span id="year"></span> A.R.A. Projeto em desenvolvimento.</p></footer>
-<div id="toast">Link copiado.</div>
-<script src="./script.js"></script>
+
+
+
+    <a class="skip-link" href="#conteudo-principal">
+        Ir para o conteúdo
+    </a>
+
+
+    <!-- =========================================================
+     HEADER
+========================================================= -->
+
+    <header class="site-header" id="site-header">
+
+
+
+
+        <div class="container header-inner">
+
+            <a href="#inicio" class="brand" aria-label="A.R.A. — página inicial">
+
+                <span class="brand-wordmark">
+                    ara
+                </span>
+
+                <span class="brand-dot" aria-hidden="true"></span>
+
+            </a>
+
+
+            <nav class="desktop-nav" id="main-navigation" aria-label="Navegação principal">
+
+                <a href="#visao">
+                    Visão
+                </a>
+
+                <a href="#recursos">
+                    Recursos
+                </a>
+
+                <a href="#personalizacao">
+                    Personalização
+                </a>
+
+                <a href="#integracoes">
+                    Integrações
+                </a>
+
+                <a href="#brasil">
+                    Brasil
+                </a>
+
+                <a href="#roadmap">
+                    Roadmap
+                </a>
+
+                <a href="#faq">
+                    FAQ
+                </a>
+
+            </nav>
+
+
+            <div class="header-side">
+
+                <div class="development-badge">
+                    <span></span>
+                    Em desenvolvimento
+                </div>
+
+
+                <button type="button" class="header-share" id="project-share-button" aria-label="Compartilhar projeto A.R.A.">
+
+                    <span class="header-share-icon">
+                        ↗
+                    </span>
+
+                    <span class="header-share-text">
+                        Compartilhar
+                    </span>
+
+                </button>
+
+
+                <button type="button" class="mobile-menu-button" id="mobile-menu-button" aria-label="Abrir menu" aria-expanded="false">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </button>
+
+            </div>
+
+    </header>
+
+
+    <main id="conteudo-principal">
+
+
+        <!-- =========================================================
+     HERO
+========================================================= -->
+
+        <section class="hero" id="inicio">
+
+
+
+
+
+            <div class="hero-grid-background"></div>
+
+            <div class="hero-light hero-light-1"></div>
+            <div class="hero-light hero-light-2"></div>
+
+
+            <div class="container hero-layout">
+
+
+                <!-- HERO COPY -->
+
+                <div class="hero-copy">
+
+                    <div class="hero-kicker">
+
+                        <span class="kicker-light"></span>
+
+                        IA • DESENVOLVIDA NO BRASIL
+
+                        <span aria-hidden="true">
+                            🇧🇷
+                        </span>
+
+                    </div>
+
+
+                    <h1>
+
+                        Uma IA que não apenas responde.
+
+                        <span class="gradient-text">
+                            Ela entende você.
+                        </span>
+
+                    </h1>
+
+
+                    <p class="hero-lead">
+
+                        Conheça a <strong>A.R.A.</strong>,
+                        uma inteligência artificial brasileira
+                        criada para ser
+
+                        <strong>
+                            rápida, simples, gratuita e verdadeiramente pessoal.
+                        </strong>
+
+                        Converse, organize sua rotina e conecte
+                        sua vida digital em uma experiência que
+                        se adapta a você.
+
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <a href="#recursos" class="button button-primary">
+
+                            Descobrir a A.R.A.
+
+                            <span aria-hidden="true">
+                                →
+                            </span>
+
+                        </a>
+
+
+                        <a href="#visao" class="hero-text-link">
+
+                            Conhecer nossa visão
+
+                            <span aria-hidden="true">
+                                ↓
+                            </span>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-trust">
+
+                        <div>
+
+                            <strong>
+                                R$ 0
+                            </strong>
+
+                            <span>
+                                proposta gratuita
+                            </span>
+
+                        </div>
+
+
+                        <i></i>
+
+
+                        <div>
+
+                            <strong>
+                                BR
+                            </strong>
+
+                            <span>
+                                projeto criado no Brasil
+                            </span>
+
+                        </div>
+
+
+                        <i></i>
+
+
+                        <div>
+
+                            <strong>
+                                1 experiência
+                            </strong>
+
+                            <span>
+                                adaptada a você
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DEMO -->
+
+                <div class="product-preview">
+
+                    <div class="preview-halo"></div>
+
+
+                    <div class="preview-window">
+
+                        <div class="preview-top">
+
+                            <div class="preview-brand">
+
+                                <div class="preview-brand-icon js-ai-icon">
+                                    A
+                                </div>
+
+                                <div>
+
+                                    <strong class="js-ai-name">
+                                        A.R.A.
+                                    </strong>
+
+                                    <span>
+                                        Assistente pessoal
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="status-online">
+
+                                <i></i>
+
+                                Online
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="preview-context">
+
+                            <span>
+                                CONTEXTO ATIVO
+                            </span>
+
+                            <b>
+                                4 serviços conectados
+                            </b>
+
+                        </div>
+
+
+                        <div class="preview-content">
+
+                            <div class="message message-user">
+
+                                <small>
+                                    VOCÊ
+                                </small>
+
+                                <p>
+
+                                    ARA, tenho uma reunião às 14h.
+                                    Organize meu dia, me lembre antes
+                                    e veja quanto tempo levo até lá.
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="message message-ara">
+
+                                <small class="js-ai-name">
+                                    A.R.A.
+                                </small>
+
+                                <p id="ara-demo-text">
+
+                                    Claro. Já estou organizando isso para você.
+
+                                </p>
+
+
+                                <div class="action-stack">
+
+                                    <div class="action-card">
+
+                                        <div class="action-status">
+                                            ✓
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Agenda
+                                            </strong>
+
+                                            <span>
+                                                Reunião às 14:00
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="action-card">
+
+                                        <div class="action-status">
+                                            ✓
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Lembrete
+                                            </strong>
+
+                                            <span>
+                                                13:30
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="action-card">
+
+                                        <div class="action-status">
+                                            ↗
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Maps
+                                            </strong>
+
+                                            <span>
+                                                Rota analisada
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="preview-input">
+
+                            <span>
+                                Converse naturalmente com a <b class="js-ai-name">A.R.A.</b>.
+                            </span>
+
+                            <button type="button" aria-hidden="true" tabindex="-1">
+                                ↑
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-chip chip-memory">
+                        <b>●</b>
+                        Memória
+                    </div>
+
+
+                    <div class="floating-chip chip-context">
+                        <b>✦</b>
+                        Contexto
+                    </div>
+
+
+                    <div class="floating-chip chip-automation">
+                        <b>⚡</b>
+                        Automação
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="container hero-statement">
+
+                <span>
+                    NÃO ESTAMOS CONSTRUINDO APENAS MAIS UM CHATBOT
+                </span>
+
+                <strong>
+                    Estamos construindo uma assistente pessoal.
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+     POSITIONING BAR
+========================================================= -->
+
+        <section class="positioning-bar" aria-label="Características principais da A.R.A.">
+
+            <div class="container positioning-inner">
+
+                <div>
+                    <b>⚡</b>
+                    Rápida
+                </div>
+
+                <span></span>
+
+                <div>
+                    <b>✦</b>
+                    Personalizada
+                </div>
+
+                <span></span>
+
+                <div>
+                    <b>∞</b>
+                    Acessível
+                </div>
+
+                <span></span>
+
+                <div>
+                    <b>◎</b>
+                    Intuitiva
+                </div>
+
+                <span></span>
+
+                <div>
+                    <b>🇧🇷</b>
+                    Brasileira
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+     VISÃO
+========================================================= -->
+
+        <section class="section vision-section" id="visao">
+
+            <div class="container vision-layout">
+
+                <aside class="section-index">
+                    01 / VISÃO
+                </aside>
+
+
+                <div class="vision-content">
+
+                    <span class="section-kicker">
+                        O PRÓXIMO PASSO É O FUTURO
+                    </span>
+
+
+                    <h2>
+
+                        A inteligência artificial deveria
+                        se adaptar à sua vida.
+
+                        <span>
+                            Não o contrário.
+                        </span>
+
+                    </h2>
+
+
+                    <p class="vision-lead">
+
+                        A maioria das experiências digitais ainda exige
+                        que você se adapte à tecnologia:
+                        abrir aplicativos, procurar funções,
+                        navegar menus e repetir informações.
+
+                    </p>
+
+
+                    <p>
+
+                        A visão da A.R.A. é inverter essa lógica.
+                        Você explica o que precisa, e a tecnologia
+                        trabalha para entender contexto,
+                        organizar informações e executar ações.
+
+                    </p>
+
+
+                    <div class="vision-quote">
+
+                        <span>
+                            “
+                        </span>
+
+                        <p>
+
+                            O objetivo não é fazer você aprender
+                            como usar uma IA.
+
+                            É fazer a IA aprender a trabalhar com você.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+     PILLARS
+========================================================= -->
+
+        <section class="pillars-section">
+
+            <div class="container pillars-grid">
+
+                <article class="pillar">
+
+                    <span class="pillar-number">
+                        01
+                    </span>
+
+                    <div class="pillar-icon">
+                        ⚡
+                    </div>
+
+                    <h3>
+                        Rápida
+                    </h3>
+
+                    <p>
+
+                        Uma experiência pensada para reduzir
+                        espera e tornar cada interação mais direta.
+
+                    </p>
+
+                </article>
+
+
+                <article class="pillar">
+
+                    <span class="pillar-number">
+                        02
+                    </span>
+
+                    <div class="pillar-icon">
+                        ◎
+                    </div>
+
+                    <h3>
+                        Intuitiva
+                    </h3>
+
+                    <p>
+
+                        Você não precisa aprender comandos.
+                        Fale naturalmente e deixe a tecnologia
+                        trabalhar nos bastidores.
+
+                    </p>
+
+                </article>
+
+
+                <article class="pillar">
+
+                    <span class="pillar-number">
+                        03
+                    </span>
+
+                    <div class="pillar-icon">
+                        ✦
+                    </div>
+
+                    <h3>
+                        Personalizada
+                    </h3>
+
+                    <p>
+
+                        Contexto, preferências e rotina
+                        transformam a experiência em algo realmente seu.
+
+                    </p>
+
+                </article>
+
+
+                <article class="pillar">
+
+                    <span class="pillar-number">
+                        04
+                    </span>
+
+                    <div class="pillar-icon">
+                        R$0
+                    </div>
+
+                    <h3>
+                        Gratuita
+                    </h3>
+
+                    <p>
+
+                        A proposta é tornar a experiência principal
+                        da A.R.A. acessível sem exigir assinatura premium.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+     RECURSOS
+========================================================= -->
+
+        <section class="section features-section" id="recursos">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            02 / RECURSOS
+                        </span>
+
+
+                        <h2>
+
+                            Mais do que conversar.
+
+                            <span>
+                                Entender. Organizar. Agir.
+                            </span>
+
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+
+                        A A.R.A. está sendo construída para transformar
+                        inteligência artificial em uma ferramenta
+                        realmente presente na rotina.
+
+                    </p>
+
+                </div>
+
+
+                <div class="feature-bento">
+
+
+                    <!-- MEMORY -->
+
+                    <article class="feature-card feature-memory">
+
+                        <div class="feature-card-top">
+
+                            <span>
+                                MEMÓRIA
+                            </span>
+
+                            <b>
+                                ◉
+                            </b>
+
+                        </div>
+
+
+                        <h3>
+                            Uma IA que lembra
+                            o que importa.
+                        </h3>
+
+
+                        <p>
+
+                            Preferências e informações relevantes
+                            ajudam a construir respostas mais coerentes
+                            ao longo do tempo.
+
+                        </p>
+
+
+                        <div class="memory-interface">
+
+                            <div>
+
+                                <small>
+                                    PREFERÊNCIA
+                                </small>
+
+                                <strong>
+                                    Respostas objetivas
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <small>
+                                    ROTINA
+                                </small>
+
+                                <strong>
+                                    Estudos à noite
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <small>
+                                    PERFIL
+                                </small>
+
+                                <strong>
+                                    Tecnologia
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- AUTOMATION -->
+
+                    <article class="feature-card">
+
+                        <div class="feature-card-top">
+
+                            <span>
+                                AUTOMAÇÃO
+                            </span>
+
+                            <b>
+                                ⚡
+                            </b>
+
+                        </div>
+
+
+                        <h3>
+                            Menos cliques.
+                            Mais resultado.
+                        </h3>
+
+
+                        <p>
+
+                            A ideia é transformar pedidos em ações
+                            usando ferramentas e serviços conectados.
+
+                        </p>
+
+
+                        <div class="automation-chain">
+
+                            <span>
+                                Você
+                            </span>
+
+                            <i>
+                                →
+                            </i>
+
+                            <span class="chain-highlight js-ai-name">
+                                A.R.A.
+                            </span>
+
+                            <i>
+                                →
+                            </i>
+
+                            <span>
+                                Serviço
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- NATURAL -->
+
+                    <article class="feature-card">
+
+                        <div class="feature-card-top">
+
+                            <span>
+                                CONVERSAÇÃO
+                            </span>
+
+                            <b>
+                                ◌
+                            </b>
+
+                        </div>
+
+
+                        <h3>
+                            Fale normalmente.
+                        </h3>
+
+
+                        <p>
+
+                            Sem sintaxe especial e sem menus complexos.
+                            A conversa deve ser a interface.
+
+                        </p>
+
+                    </article>
+
+
+                    <!-- TASKS -->
+
+                    <article class="feature-card">
+
+                        <div class="feature-card-top">
+
+                            <span>
+                                PRODUTIVIDADE
+                            </span>
+
+                            <b>
+                                ✓
+                            </b>
+
+                        </div>
+
+
+                        <h3>
+                            Organize tarefas
+                            sem sair da conversa.
+                        </h3>
+
+
+                        <div class="task-preview">
+
+                            <div>
+
+                                <span class="task-check active">
+                                    ✓
+                                </span>
+
+                                Relatório enviado
+
+                            </div>
+
+
+                            <div>
+
+                                <span class="task-check">
+                                    ○
+                                </span>
+
+                                Estudar programação
+
+                            </div>
+
+
+                            <div>
+
+                                <span class="task-check">
+                                    ○
+                                </span>
+
+                                Reunião às 14h
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CONTEXT -->
+
+                    <article class="feature-card">
+
+                        <div class="feature-card-top">
+
+                            <span>
+                                CONTEXTO
+                            </span>
+
+                            <b>
+                                ✦
+                            </b>
+
+                        </div>
+
+
+                        <h3>
+                            Conversas que não precisam
+                            começar do zero.
+                        </h3>
+
+
+                        <p>
+
+                            Informações relevantes podem ser reutilizadas
+                            para manter continuidade nas interações.
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section identity-section" id="personalizacao">
+
+            <div class="identity-background">
+                <div class="identity-glow identity-glow-left"></div>
+                <div class="identity-glow identity-glow-right"></div>
+            </div>
+
+
+            <div class="container">
+
+                <header class="identity-heading">
+
+                    <span class="section-kicker">
+                        03 / SUA EXPERIÊNCIA
+                    </span>
+
+                    <h2>
+                        Não existe uma A.R.A.
+                        <span>Existe a sua.</span>
+                    </h2>
+
+                    <p>
+                        Sua inteligência artificial não precisa parecer,
+                        falar ou se comportar como a de todo mundo.
+                        Dê a ela uma identidade que combine com você.
+                    </p>
+
+                    <div class="try-personalization">
+                        <span></span>
+                        EXPERIMENTE AGORA
+                        <b>↓</b>
+                    </div>
+
+                </header>
+
+
+                <div class="identity-studio">
+
+                    <!-- ==============================================
+                 CONTROLES
+            =============================================== -->
+
+                    <div class="identity-controls">
+
+                        <div class="studio-header">
+
+                            <div>
+                                <span class="studio-status"></span>
+
+                                <div>
+                                    <strong>
+                                        PERSONALIZE SUA IA
+                                    </strong>
+
+                                    <small>
+                                        As mudanças acontecem em tempo real
+                                    </small>
+                                </div>
+                            </div>
+
+                            <span class="live-badge">
+                                ● AO VIVO
+                            </span>
+
+                        </div>
+
+
+                        <!-- NOME -->
+
+                        <div class="custom-group">
+
+                            <div class="custom-group-title">
+
+                                <div>
+                                    <span>01</span>
+
+                                    <div>
+                                        <strong>
+                                            Como você quer chamá-la?
+                                        </strong>
+
+                                        <small>
+                                            Você escolhe como sua assistente será chamada.
+                                        </small>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="name-presets">
+
+                                <button class="name-preset active" type="button" data-name="A.R.A.">
+                                    A.R.A.
+                                </button>
+
+                                <button class="name-preset" type="button" data-name="Luna">
+                                    Luna
+                                </button>
+
+                                <button class="name-preset" type="button" data-name="Nova">
+                                    Nova
+                                </button>
+
+                                <button class="name-preset" type="button" data-name="Íris">
+                                    Íris
+                                </button>
+
+                            </div>
+
+
+                            <label class="custom-name-field">
+
+                                <span>
+                                    OU CRIE O SEU
+                                </span>
+
+                                <div>
+
+                                    <input type="text" id="custom-ai-name" maxlength="18" placeholder="Digite um nome..." autocomplete="off" aria-label="Nome personalizado da assistente">
+
+                                    <small id="name-counter">
+                                        0/18
+                                    </small>
+
+                                </div>
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- COR -->
+
+                        <div class="custom-group">
+
+                            <div class="custom-group-title">
+
+                                <div>
+                                    <span>02</span>
+
+                                    <div>
+                                        <strong>
+                                            Escolha sua identidade
+                                        </strong>
+
+                                        <small>
+                                            Veja toda esta página reagir à sua escolha.
+                                        </small>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="color-selector" aria-label="Escolha uma cor">
+
+                                <button type="button" class="color-option active" data-theme="mint" aria-label="Verde A.R.A.">
+                                    <i style="--option-color:#12e7b1"></i>
+                                    <span>Mint</span>
+                                </button>
+
+
+                                <button type="button" class="color-option" data-theme="blue" aria-label="Azul">
+                                    <i style="--option-color:#4d9fff"></i>
+                                    <span>Azul</span>
+                                </button>
+
+
+                                <button type="button" class="color-option" data-theme="purple" aria-label="Roxo">
+                                    <i style="--option-color:#9b72ff"></i>
+                                    <span>Roxo</span>
+                                </button>
+
+
+                                <button type="button" class="color-option" data-theme="pink" aria-label="Rosa">
+                                    <i style="--option-color:#ff6fcf"></i>
+                                    <span>Rosa</span>
+                                </button>
+
+
+                                <button type="button" class="color-option" data-theme="orange" aria-label="Laranja">
+                                    <i style="--option-color:#ff9d42"></i>
+                                    <span>Solar</span>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PERSONALIDADE -->
+
+                        <div class="custom-group">
+
+                            <div class="custom-group-title">
+
+                                <div>
+                                    <span>03</span>
+
+                                    <div>
+                                        <strong>
+                                            Como ela deve conversar?
+                                        </strong>
+
+                                        <small>
+                                            Escolha uma personalidade para experimentar.
+                                        </small>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="personality-selector">
+
+                                <button type="button" class="personality-option active" data-personality="objetiva">
+                                    <b>→</b>
+
+                                    <span>
+                                        <strong>Objetiva</strong>
+                                        <small>Direta ao ponto</small>
+                                    </span>
+                                </button>
+
+
+                                <button type="button" class="personality-option" data-personality="amigavel">
+                                    <b>☺</b>
+
+                                    <span>
+                                        <strong>Amigável</strong>
+                                        <small>Leve e próxima</small>
+                                    </span>
+                                </button>
+
+
+                                <button type="button" class="personality-option" data-personality="tecnica">
+                                    <b>&lt;/&gt;</b>
+
+                                    <span>
+                                        <strong>Técnica</strong>
+                                        <small>Detalhada e precisa</small>
+                                    </span>
+                                </button>
+
+
+                                <button type="button" class="personality-option" data-personality="criativa">
+                                    <b>✦</b>
+
+                                    <span>
+                                        <strong>Criativa</strong>
+                                        <small>Expressiva e inventiva</small>
+                                    </span>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ÍCONE -->
+
+                        <div class="custom-group">
+
+                            <div class="custom-group-title">
+
+                                <div>
+                                    <span>04</span>
+
+                                    <div>
+                                        <strong>
+                                            Escolha um símbolo
+                                        </strong>
+
+                                        <small>
+                                            Um detalhe pequeno. Uma identidade completamente diferente.
+                                        </small>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="icon-selector">
+
+                                <button class="icon-option active" type="button" data-icon="A">
+                                    A
+                                </button>
+
+                                <button class="icon-option" type="button" data-icon="✦">
+                                    ✦
+                                </button>
+
+                                <button class="icon-option" type="button" data-icon="◉">
+                                    ◉
+                                </button>
+
+                                <button class="icon-option" type="button" data-icon="∞">
+                                    ∞
+                                </button>
+
+                                <button class="icon-option" type="button" data-icon="◆">
+                                    ◆
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <button type="button" class="reset-identity" id="reset-identity">
+                            ↺ Restaurar identidade A.R.A.
+                        </button>
+
+                    </div>
+
+
+                    <!-- ==============================================
+                 LIVE PREVIEW
+            =============================================== -->
+
+                    <div class="identity-preview-area">
+
+                        <div class="preview-label">
+
+                            <span>
+                                SUA IA
+                            </span>
+
+                            <b>
+                                PREVIEW EM TEMPO REAL
+                            </b>
+
+                        </div>
+
+
+                        <div class="custom-ai-device">
+
+                            <div class="custom-device-glow"></div>
+
+
+                            <div class="custom-device-header">
+
+                                <div class="custom-ai-identity">
+
+                                    <div class="custom-ai-avatar js-ai-icon" id="custom-ai-avatar">
+                                        A
+                                    </div>
+
+                                    <div>
+
+                                        <strong id="preview-ai-name" class="js-ai-name">
+                                            A.R.A.
+                                        </strong>
+
+                                        <span>
+                                            sua assistente pessoal
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="custom-online">
+                                    <i></i>
+                                    online
+                                </div>
+
+                            </div>
+
+
+                            <div class="custom-device-body">
+
+                                <div class="personalization-context">
+
+                                    <span>
+                                        PERSONALIDADE
+                                    </span>
+
+                                    <strong id="preview-personality">
+                                        Objetiva
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="custom-message-ai">
+
+                                    <div class="mini-avatar js-ai-icon" id="mini-ai-avatar">
+                                        A
+                                    </div>
+
+                                    <div>
+
+                                        <small id="message-ai-name" class="js-ai-name">
+                                            A.R.A.
+                                        </small>
+
+                                        <p id="personalized-message">
+                                            Olá. Estou pronta. O que vamos resolver hoje?
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="custom-message-user">
+
+                                    <small>
+                                        VOCÊ
+                                    </small>
+
+                                    <p>
+                                        Organize meu dia e me ajude a focar no que é mais importante.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="custom-message-ai">
+
+                                    <div class="mini-avatar js-ai-icon" id="mini-ai-avatar-secondary">
+                                        A
+                                    </div>
+
+                                    <div>
+
+                                        <small class="dynamic-ai-name js-ai-name">
+                                            A.R.A.
+                                        </small>
+
+                                        <p id="personality-response">
+                                            Claro. Vou priorizar seus compromissos e montar uma sequência objetiva para o seu dia.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="custom-capabilities">
+
+                                    <div>
+                                        <i>✓</i>
+                                        Contexto
+                                    </div>
+
+                                    <div>
+                                        <i>✓</i>
+                                        Memória
+                                    </div>
+
+                                    <div>
+                                        <i>✓</i>
+                                        Rotina
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="custom-device-input">
+
+                                <span>
+                                    Fale com
+                                    <b id="input-ai-name" class="js-ai-name">
+                                        A.R.A.
+                                    </b>...
+                                </span>
+
+                                <button type="button" tabindex="-1">
+                                    ↑
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="identity-result">
+
+                            <span>
+                                VOCÊ ACABOU DE MUDAR A A.R.A.
+                            </span>
+
+                            <h3>
+                                E isso foi só
+                                <strong>a aparência.</strong>
+                            </h3>
+
+                            <p>
+                                A proposta vai além das cores.
+                                Personalidade, memória, contexto,
+                                rotina e automações podem transformar
+                                a maneira como sua assistente trabalha com você.
+                            </p>
+
+                        </div>
+
+                        <!-- ==============================================
+                     ASSINATURA PESSOAL + COMPARTILHAMENTO
+                =============================================== -->
+
+                        <div class="personal-signature">
+
+                            <div class="personal-signature-glow"></div>
+
+                            <span class="personal-signature-kicker">
+                                SUA A.R.A. • SUA IDENTIDADE
+                            </span>
+
+                            <h3>
+                                Não foi feita para ser igual para todos.
+                                <strong>Foi feita para se tornar sua.</strong>
+                            </h3>
+
+                            <p>
+                                Seu nome. Sua identidade. Seu jeito.
+                                Quanto mais você transforma a A.R.A.,
+                                mais a experiência passa a ter a sua cara —
+                                <strong>porque essa versão foi criada por você.</strong>
+                            </p>
+
+                            <div class="personal-signature-preview">
+
+                                <div class="signature-avatar js-ai-icon">
+                                    A
+                                </div>
+
+                                <div>
+                                    <small>
+                                        SUA VERSÃO
+                                    </small>
+
+                                    <strong class="js-ai-name">
+                                        A.R.A.
+                                    </strong>
+
+                                    <span>
+                                        configurada por você
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <div class="personal-signature-actions">
+
+
+
+
+                            </div>
+
+                            <div class="share-feedback" id="share-feedback" aria-live="polite"></div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==============================================
+             PERSONALIZATION DEPTH
+        =============================================== -->
+
+                <div class="personalization-depth">
+
+                    <div class="depth-heading">
+
+                        <span>
+                            MUITO ALÉM DE UM TEMA
+                        </span>
+
+                        <h3>
+                            Personalização que vai
+                            <strong>da aparência ao comportamento.</strong>
+                        </h3>
+
+                    </div>
+
+
+                    <div class="depth-flow">
+
+                        <article>
+                            <b>01</b>
+                            <i>◈</i>
+                            <strong>Identidade</strong>
+                            <span>Nome e símbolo</span>
+                        </article>
+
+                        <div class="depth-line"></div>
+
+                        <article>
+                            <b>02</b>
+                            <i>◉</i>
+                            <strong>Aparência</strong>
+                            <span>Cores e interface</span>
+                        </article>
+
+                        <div class="depth-line"></div>
+
+                        <article>
+                            <b>03</b>
+                            <i>✦</i>
+                            <strong>Personalidade</strong>
+                            <span>Tom e linguagem</span>
+                        </article>
+
+                        <div class="depth-line"></div>
+
+                        <article>
+                            <b>04</b>
+                            <i>◎</i>
+                            <strong>Contexto</strong>
+                            <span>Preferências</span>
+                        </article>
+
+                        <div class="depth-line"></div>
+
+                        <article>
+                            <b>05</b>
+                            <i>⚡</i>
+                            <strong>Automação</strong>
+                            <span>Sua rotina</span>
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================================
+     COMPARTILHAR A.R.A.
+========================================================= -->
+
+        <section class="share-project-section" id="compartilhar">
+
+            <div class="share-project-light share-project-light-left"></div>
+
+            <div class="share-project-light share-project-light-right"></div>
+
+
+            <div class="container">
+
+                <div class="share-project-card">
+
+
+                    <div class="share-project-grid"></div>
+
+
+                    <div class="share-project-content">
+
+
+                        <span class="share-project-kicker">
+
+                            <i></i>
+
+                            ESPALHE O PRÓXIMO PASSO
+
+                        </span>
+
+
+                        <h2>
+
+                            Algumas ideias merecem
+
+                            <span>
+                                chegar mais longe.
+                            </span>
+
+                        </h2>
+
+
+                        <p class="share-project-lead">
+
+                            A A.R.A. ainda está sendo construída.
+
+                            Mas o futuro que estamos imaginando
+                            pode começar a chegar em mais pessoas agora.
+
+                        </p>
+
+
+                        <blockquote>
+
+                            Se você acredita que inteligência artificial
+                            deveria ser mais pessoal, simples e acessível,
+
+                            <strong>
+                                compartilhe essa ideia.
+                            </strong>
+
+                        </blockquote>
+
+
+                        <div class="share-project-actions">
+
+
+                            <button type="button" class="share-project-button" id="section-share-button">
+
+                                <span class="share-project-button-icon">
+                                    ↗
+                                </span>
+
+
+                                <span class="share-project-button-copy">
+
+                                    <strong>
+                                        Compartilhar A.R.A.
+                                    </strong>
+
+                                    <small>
+                                        Mostre o projeto para alguém
+                                    </small>
+
+                                </span>
+
+                            </button>
+
+
+
+
+                        </div>
+
+
+                        <div class="project-share-feedback" id="project-share-feedback" aria-live="polite"></div>
+
+
+                    </div>
+
+
+                    <div class="share-project-visual">
+
+
+                        <div class="share-orbit share-orbit-one"></div>
+
+                        <div class="share-orbit share-orbit-two"></div>
+
+
+                        <div class="share-center">
+
+                            <span class="share-center-mark">
+                                ara
+                            </span>
+
+                            <small>
+                                O PRÓXIMO PASSO É O FUTURO
+                            </small>
+
+                        </div>
+
+
+                        <div class="share-person share-person-one">
+                            <span>01</span>
+                        </div>
+
+                        <div class="share-person share-person-two">
+                            <span>02</span>
+                        </div>
+
+                        <div class="share-person share-person-three">
+                            <span>03</span>
+                        </div>
+
+
+                        <span class="share-line-text">
+                            UMA IDEIA → MAIS PESSOAS
+                        </span>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================================================
+     COMO FUNCIONA
+========================================================= -->
+
+        <section class="section experience-section">
+
+            <div class="container experience-layout">
+
+                <div>
+
+                    <span class="section-kicker">
+                        05 / EXPERIÊNCIA
+                    </span>
+
+
+                    <h2>
+
+                        Complexa por dentro.
+
+                        <span>
+                            Simples para você.
+                        </span>
+
+                    </h2>
+
+                </div>
+
+
+                <div class="experience-steps">
+
+                    <article>
+
+                        <span>
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Você pede
+                            </h3>
+
+                            <p>
+                                Fale naturalmente o que deseja.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                A.R.A. entende
+                            </h3>
+
+                            <p>
+                                Contexto e intenção são interpretados.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                A.R.A. decide
+                            </h3>
+
+                            <p>
+                                A melhor forma de responder ou agir é definida.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>
+                            04
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                A.R.A. executa
+                            </h3>
+
+                            <p>
+                                Ferramentas e integrações entram em ação.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+     FREE
+========================================================= -->
+
+        <section class="section free-section">
+
+            <div class="container free-card">
+
+                <div class="free-symbol">
+                    ∞
+                </div>
+
+
+                <div class="free-copy">
+
+                    <span class="section-kicker">
+                        ACESSIBILIDADE
+                    </span>
+
+
+                    <h2>
+                        IA útil não deveria começar
+                        com uma barreira.
+                    </h2>
+
+
+                    <p>
+
+                        A A.R.A. nasce com a proposta
+                        de tornar sua experiência principal
+                        gratuita e acessível.
+
+                    </p>
+
+                </div>
+
+
+                <div class="free-price">
+
+                    <strong>
+                        R$ 0
+                    </strong>
+
+                    <span>
+                        proposta de acesso
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+     BRASIL
+========================================================= -->
+
+        <section class="section brazil-section" id="brasil">
+
+            <div class="brazil-glow"></div>
+
+
+            <div class="container brazil-layout">
+
+                <div class="brazil-art">
+
+                    <div class="brazil-art-inner">
+
+                        <span>
+                            BR
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="brazil-copy">
+
+                    <span class="section-kicker">
+                        06 / ORIGEM
+                    </span>
+
+
+                    <div class="brazil-badge">
+                        🇧🇷 TECNOLOGIA BRASILEIRA
+                    </div>
+
+
+                    <h2>
+
+                        Feita por brasileiros.
+
+                        <span>
+                            Pensada para ir além.
+                        </span>
+
+                    </h2>
+
+
+                    <p>
+
+                        A A.R.A. nasceu no Brasil com a proposta
+                        de construir uma experiência de IA própria,
+                        acessível e relevante para pessoas reais.
+
+                    </p>
+
+
+                    <blockquote>
+
+                        “Não queremos apenas usar inteligência artificial.
+                        Queremos construir nossa própria experiência de IA.”
+
+                    </blockquote>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+     COMPARISON
+========================================================= -->
+
+        <section class="section comparison-section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            07 / PROPOSTA
+                        </span>
+
+
+                        <h2>
+
+                            O que queremos fazer
+
+                            <span>
+                                diferente.
+                            </span>
+
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+
+                        A ideia não é copiar a experiência
+                        das ferramentas existentes,
+                        mas construir uma abordagem mais pessoal.
+
+                    </p>
+
+                </div>
+
+
+                <div class="comparison-table">
+
+                    <div class="comparison-row comparison-head">
+
+                        <span>
+                            Experiência
+                        </span>
+
+                        <strong>
+                            A.R.A.
+                        </strong>
+
+                        <span>
+                            Modelo tradicional
+                        </span>
+
+                    </div>
+
+
+                    <div class="comparison-row">
+
+                        <span>
+                            Conversação por IA
+                        </span>
+
+                        <strong class="positive">
+                            ✓
+                        </strong>
+
+                        <span>
+                            ✓
+                        </span>
+
+                    </div>
+
+
+                    <div class="comparison-row">
+
+                        <span>
+                            Personalização profunda
+                        </span>
+
+                        <strong class="positive">
+                            ✓
+                        </strong>
+
+                        <span>
+                            varia
+                        </span>
+
+                    </div>
+
+
+                    <div class="comparison-row">
+
+                        <span>
+                            Memória contextual
+                        </span>
+
+                        <strong class="positive">
+                            ✓
+                        </strong>
+
+                        <span>
+                            varia
+                        </span>
+
+                    </div>
+
+
+                    <div class="comparison-row">
+
+                        <span>
+                            Automação
+                        </span>
+
+                        <strong class="positive">
+                            ✓
+                        </strong>
+
+                        <span>
+                            varia
+                        </span>
+
+                    </div>
+
+
+                    <div class="comparison-row">
+
+                        <span>
+                            Aplicativos conectados
+                        </span>
+
+                        <strong class="positive">
+                            ✓
+                        </strong>
+
+                        <span>
+                            varia
+                        </span>
+
+                    </div>
+
+
+                    <div class="comparison-row">
+
+                        <span>
+                            Proposta gratuita
+                        </span>
+
+                        <strong class="positive">
+                            ✓
+                        </strong>
+
+                        <span>
+                            varia
+                        </span>
+
+                    </div>
+
+
+                    <div class="comparison-row">
+
+                        <span>
+                            Desenvolvida no Brasil
+                        </span>
+
+                        <strong class="positive">
+                            ✓
+                        </strong>
+
+                        <span>
+                            —
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+     ROADMAP
+========================================================= -->
+
+        <section class="section roadmap-section" id="roadmap">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            08 / ROADMAP
+                        </span>
+
+
+                        <h2>
+
+                            Estamos apenas
+
+                            <span>
+                                começando.
+                            </span>
+
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+
+                        O desenvolvimento da A.R.A. acontece por etapas,
+                        expandindo gradualmente a capacidade
+                        da plataforma.
+
+                    </p>
+
+                </div>
+
+
+                <div class="roadmap-grid">
+
+                    <article class="roadmap-card active">
+
+                        <span class="roadmap-dot"></span>
+
+                        <small>
+                            FASE 01
+                        </small>
+
+                        <h3>
+                            Núcleo
+                        </h3>
+
+                        <p>
+
+                            Conversação, usuários, tarefas,
+                            contexto e memória.
+
+                        </p>
+
+                        <b>
+                            EM DESENVOLVIMENTO
+                        </b>
+
+                    </article>
+
+
+                    <article class="roadmap-card">
+
+                        <span class="roadmap-dot"></span>
+
+                        <small>
+                            FASE 02
+                        </small>
+
+                        <h3>
+                            Automação
+                        </h3>
+
+                        <p>
+
+                            Ferramentas, ações
+                            e serviços conectados.
+
+                        </p>
+
+                        <b>
+                            PLANEJADA
+                        </b>
+
+                    </article>
+
+
+                    <article class="roadmap-card">
+
+                        <span class="roadmap-dot"></span>
+
+                        <small>
+                            FASE 03
+                        </small>
+
+                        <h3>
+                            Ecossistema
+                        </h3>
+
+                        <p>
+
+                            Integrações externas
+                            e serviços digitais.
+
+                        </p>
+
+                        <b>
+                            FUTURO
+                        </b>
+
+                    </article>
+
+
+                    <article class="roadmap-card">
+
+                        <span class="roadmap-dot"></span>
+
+                        <small>
+                            FASE 04
+                        </small>
+
+                        <h3>
+                            Mobile
+                        </h3>
+
+                        <p>
+
+                            Expansão da experiência
+                            para smartphones.
+
+                        </p>
+
+                        <b>
+                            FUTURO
+                        </b>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+     FAQ
+========================================================= -->
+
+        <section class="section faq-section" id="faq">
+
+            <div class="container faq-layout">
+
+                <div class="faq-heading">
+
+                    <span class="section-kicker">
+                        09 / FAQ
+                    </span>
+
+
+                    <h2>
+                        Perguntas sobre
+                        a A.R.A.
+                    </h2>
+
+
+                    <p>
+
+                        Algumas respostas sobre
+                        o projeto e sua proposta.
+
+                    </p>
+
+                </div>
+
+
+                <div class="faq-list">
+
+
+                    <article class="faq-item">
+
+                        <button type="button" class="faq-question" aria-expanded="false">
+
+                            <span>
+                                O que significa A.R.A.?
+                            </span>
+
+                            <i>
+                                +
+                            </i>
+
+                        </button>
+
+
+                        <div class="faq-answer">
+
+                            <p>
+
+                                A.R.A. significa
+                                <strong>
+                                    Assistente de Raciocínio Adaptativo
+                                </strong>.
+
+                                O nome representa a proposta central
+                                do projeto: uma assistente capaz
+                                de compreender contexto, adaptar
+                                sua experiência ao usuário e auxiliar
+                                em diferentes situações da rotina.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item">
+
+                        <button type="button" class="faq-question" aria-expanded="false">
+
+                            <span>
+                                O que é a A.R.A.?
+                            </span>
+
+                            <i>
+                                +
+                            </i>
+
+                        </button>
+
+
+                        <div class="faq-answer">
+
+                            <p>
+
+                                A A.R.A. é uma assistente pessoal
+                                de inteligência artificial brasileira
+                                criada para combinar conversação,
+                                memória, contexto, produtividade,
+                                personalização e automação.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item">
+
+                        <button type="button" class="faq-question" aria-expanded="false">
+
+                            <span>
+                                A A.R.A. já está disponível?
+                            </span>
+
+                            <i>
+                                +
+                            </i>
+
+                        </button>
+
+
+                        <div class="faq-answer">
+
+                            <p>
+
+                                A A.R.A. está em desenvolvimento ativo.
+                                Esta página apresenta a visão,
+                                os diferenciais e o roadmap planejado.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item">
+
+                        <button type="button" class="faq-question" aria-expanded="false">
+
+                            <span>
+                                A A.R.A. será gratuita?
+                            </span>
+
+                            <i>
+                                +
+                            </i>
+
+                        </button>
+
+
+                        <div class="faq-answer">
+
+                            <p>
+
+                                Sim. A proposta é manter
+                                a experiência principal da A.R.A.
+                                disponível gratuitamente.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item">
+
+                        <button type="button" class="faq-question" aria-expanded="false">
+
+                            <span>
+                                A A.R.A. terá memória?
+                            </span>
+
+                            <i>
+                                +
+                            </i>
+
+                        </button>
+
+
+                        <div class="faq-answer">
+
+                            <p>
+
+                                A arquitetura do projeto
+                                contempla contexto e memória,
+                                permitindo que informações relevantes
+                                ajudem a personalizar interações futuras.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item">
+
+                        <button type="button" class="faq-question" aria-expanded="false">
+
+                            <span>
+                                Quais aplicativos poderão ser integrados?
+                            </span>
+
+                            <i>
+                                +
+                            </i>
+
+                        </button>
+
+
+                        <div class="faq-answer">
+
+                            <p>
+
+                                O roadmap prevê integrações
+                                com agenda, email, música,
+                                mapas, produtividade
+                                e outros serviços digitais.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item">
+
+                        <button type="button" class="faq-question" aria-expanded="false">
+
+                            <span>
+                                A A.R.A. é brasileira?
+                            </span>
+
+                            <i>
+                                +
+                            </i>
+
+                        </button>
+
+
+                        <div class="faq-answer">
+
+                            <p>
+
+                                Sim. A A.R.A. é um projeto
+                                criado e desenvolvido por brasileiros.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+     FINAL
+========================================================= -->
+
+        <section class="final-section">
+
+            <div class="final-grid-background"></div>
+            <div class="final-light"></div>
+
+
+            <div class="container final-content">
+
+                <span class="final-wordmark">
+                    ara
+                </span>
+
+
+                <small>
+                    INTELIGÊNCIA ARTIFICIAL BRASILEIRA
+                </small>
+
+
+                <h2>
+
+                    O próximo passo
+
+                    <strong>
+                        é o futuro.
+                    </strong>
+
+                </h2>
+
+
+                <p>
+
+                    Uma assistente criada para entender,
+                    organizar e automatizar sua vida digital.
+
+                </p>
+
+
+                <a href="#inicio" class="button button-primary">
+
+                    Voltar ao início
+
+                    <span aria-hidden="true">
+                        ↑
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================================================
+     FOOTER
+========================================================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-main">
+
+            <div class="footer-brand">
+
+                <span class="footer-wordmark">
+                    ara
+                </span>
+
+
+                <p>
+
+                    Inteligência artificial brasileira
+                    desenvolvida para ser simples,
+                    pessoal e acessível.
+
+                </p>
+
+
+                <span class="footer-country">
+                    🇧🇷 Feita no Brasil
+                </span>
+
+            </div>
+
+
+            <div class="footer-nav">
+
+                <div>
+
+                    <strong>
+                        Produto
+                    </strong>
+
+                    <a href="#recursos">
+                        Recursos
+                    </a>
+
+                    <a href="#personalizacao">
+                        Personalização
+                    </a>
+
+                    <a href="#integracoes">
+                        Integrações
+                    </a>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Projeto
+                    </strong>
+
+                    <a href="#visao">
+                        Visão
+                    </a>
+
+                    <a href="#brasil">
+                        Brasil
+                    </a>
+
+                    <a href="#roadmap">
+                        Roadmap
+                    </a>
+
+                    <a href="#faq">
+                        FAQ
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <p>
+
+                ©
+                <span id="current-year"></span>
+                A.R.A.
+
+            </p>
+
+
+            <p>
+                Projeto em desenvolvimento.
+            </p>
+
+
+            <p>
+                O próximo passo é o futuro.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <noscript>
+
+        <div class="noscript-warning">
+
+            O conteúdo principal da página continua disponível,
+            mas alguns efeitos visuais exigem JavaScript.
+
+        </div>
+
+    </noscript>
+
+
+    <script src="script.js" defer></script>
+
 </body>
+
 </html>
